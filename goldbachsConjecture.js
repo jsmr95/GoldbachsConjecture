@@ -41,9 +41,8 @@ function isPrime(n) {
     return false;
   }
 
-  for (var potentialDivisor = 2; potentialDivisor < n; potentialDivisor++) {
-
-    if (n % Math.sqrt(potentialDivisor) === 0) {
+  for (var i = 2; i < n; i++) {
+    if (n % Math.sqrt(i) === 0) {
       return false;
     }
   }
